@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int MaxBilangan(int h,int k, int u,int m) {
+    if(h>k && h>u && h>m) {
+        return h; }
+    else if(k>h && k>u && k>m) {
+        return k; }
+    else if(u>h && u>k && u>m) {
+        return u; }
+    else {
+        return m;
+    }
+}
+
+int main() {
+int h, k, u, m;
+    scanf("%d %d %d %d", &h, &k, &u, &m);
+int hasil = MaxBilangan(h,k,u,m);
+    printf("%d", hasil);
+    return 0;
+}        

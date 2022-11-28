@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void biodata(int tahunlahir, char *Namaku, char *Asal) {
+    int tahun_sekarang = 2020;
+    printf("\nPerkenalan nama saya : %s\n", Namaku);
+    printf("\nUmur saya : %d\n", tahun_sekarang - tahunlahir);
+    printf("Saya adalah angkatan : %d\n", tahun_sekarang);
+    printf("Asal saya dari : %s", Asal);
+}
+int main() {
+    int tahunlahir;
+    char Namaku[20], Asal[15];
+    scanf("%d", &tahunlahir);
+    scanf(" %[^\n]%*c", &Namaku);
+    scanf(" %[^\n]%*c", &Asal);
+    biodata(tahunlahir, Namaku, Asal);
+    return 0;
+}
